@@ -324,7 +324,7 @@ export default function HotStuffApp() {
         {lightboxIndex !== null && <Lightbox images={galleryImages} initialIndex={lightboxIndex} onClose={() => setLightboxIndex(null)} />}
         <div className="flex justify-between mb-6">
           <Button variant="ghost" onClick={() => setView('model')}><ChevronLeft size={20} /> Back</Button>
-          <Button variant="primary" onClick={() => activeShoot.downloadUrl ? window.open(activeShoot.downloadUrl, '_blank') : alert("No link.")}><Download size={18} /> Download Set</Button>
+          <Button variant="primary" onClick={() => activeShoot.downloadUrl ? window.open(activeShoot.downloadUrl, '_blank') : alert("No link.")}><Download size={18} /> Download Full Set</Button>
         </div>
         <h1 className="text-3xl font-bold text-white mb-8">{activeShoot.title}</h1>
         <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
